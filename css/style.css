@@ -1,0 +1,94 @@
+main{
+    text-align: center;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    max-width: 780px;
+}
+
+.board_menu{
+    background-color: grey;
+    height: 100%;
+    width: 20%;
+    float: right;
+    position: relative;
+    text-align: center;
+}
+
+.orange{
+    background-color: orange;
+    color: white;
+}
+
+.player1,
+.player2{
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.board_menu h3{
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.board_menu p{
+    font-size: 30px;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.again_btn{
+    position: absolute;
+    bottom: 0;
+    margin: 20px auto;
+    transform: translate(-50%);
+    width: 90%;
+    height: 50px;
+    font-size: 18px;
+}
+.player-win{
+    background-color: green;
+}
+.player-draw{
+    background-color: orange;
+}
+
+.toe_board{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.tile,
+.tile1,
+.tile2{
+    width: 30%;
+    height: 30%;
+    margin-right: 1%;
+    margin-top: 3px;
+    border-bottom: 4px solid grey;
+    background-color: lightgrey;
+    box-shadow: 4px 4px 0px 2px rgba(255,170,0,1);
+    transition: background-color .3s;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tile:hover,
+.tile1:hover,
+.tile2:hover{
+    background-color: grey;
+    transition: background-color .3s;
+    cursor: pointer;
+}
